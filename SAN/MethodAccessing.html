@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<h2> Javascript Accessing Method in Object variable datatype </h2>
+<P> TO TEST THE output of method accessing </p>
+<p id = "demo" ></p>
+<p id = "demo1"></p>
+<p id = "demo2"></p>
+<p id = "demo3"></p>
+<script>
+
+var myDetail = {
+Firstname: "Santosh",
+Lastname : "Arakeri",
+Age      : 29,
+Fullname : function(){
+return this.Firstname + " " + this.Lastname
+}
+ 
+};
+
+document.getElementById("demo").innerHTML= myDetail.Fullname();
+document.getElementById("demo1").innerHTML= myDetail.Firstname;
+document.getElementById("demo2").innerHTML= myDetail.Lastname;
+document.getElementById("demo3").innerHTML= myDetail.Age;
+
+
+</script>
+
+</body>
+</html>

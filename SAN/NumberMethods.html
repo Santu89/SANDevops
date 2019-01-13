@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h2><center> Number Methods and Properties </center> </h2>
+<p> <center> Testing Number Methods:: valueOf(),toString(),toExponential(),toFixed() </center> <p>
+  
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script> 
+var a=123;
+var x=12.3456
+
+//document.getElementById("demo").innerHTML=a.toString();                          //Value of a returned as string using toString() Method
+//document.getElementById("demo1").innerHTML=(321).toString();                     // Value of 123 returned as string
+//document.getElementById("demo2").innerHTML=typeof (321+123).toString();          // Type of 321+123 returned as string
+document.getElementById("demo").innerHTML=typeof x.valueOf() + "<br>" +typeof (123+345).valueOf(); //Returns the value as datatype number
+
+document.getElementById("demo1").innerHTML= x.toExponential();                    //toExponential() Method
+document.getElementById("demo2").innerHTML=x.toFixed() + "<br>" +x.toFixed(2) + "<br>" +x.toFixed(6);        //Returns string
+document.getElementById("demo3").innerHTML=x.toPrecision() + "<br>" +x.toPrecision(2) + "<br>" +x.toPrecision(4);     //Return string
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h2> JavaScript Global Methods :: </h2>
+
+<p> Number(),parseInt(),parseFloat() Methods</p>
+<p> Converting Variables into Number </p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+
+var x=12.5;
+
+document.getElementById("demo").innerHTML= 
+typeof Number(true) + "<br>" +   //Returns number for Boolean
+Number(false)+"<br>" +    //Returns number for Boolean
+Number("santosh")+"<br>"+ //Returns NaN
+Number("420")+ "<br>"+    //Returns number
+Number("12 3")+"<br>" +   //Returns NaN
+Number(new Date());       //Returns number
+
+document.getElementById("demo1").innerHTML= 
+typeof parseInt(true) + "<br>" +   //Returns number for Boolean
+parseInt(10.23)+"<br>" +    //Returns number 10
+parseInt("santosh")+"<br>"+ //Returns NaN
+parseInt("420.23")+ "<br>"+    //Returns number 420
+parseInt("12 3")+"<br>" +   //Returns 12
+parseInt(new Date());       //Returns NaN
+
+
+document.getElementById("demo2").innerHTML= 
+typeof parseFloat(true) + "<br>" +   //Returns number for Boolean
+parseFloat(10.23)+"<br>" +    //Returns number 10
+typeof parseFloat("santosh")+"<br>"+ //Returns NaN
+parseFloat("420.23")+ "<br>"+    //Returns number 420
+parseFloat("12 3")+"<br>" +   //Returns 12
+parseFloat(new Date());       //Returns NaN
+
+
+document.getElementById("demo3").innerHTML=
+Number.MAX_VALUE + "<br>" +
+Number.MIN_VALUE + "<br>" +
+x.MAX_VALUE;              //Returns undefined
+
+
+</script>
+</body>
+</html>

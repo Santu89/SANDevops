@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<h2> <center> Strings </center> </h2>
+<P>  <center>TO TEST Strings </center> </p>
+<p id = "demo" ></p>
+
+<p id = "demo1"></p>
+
+<p id = "demo2"></p>
+
+<p id = "demo3"></p>
+<script>
+
+var x= "Santosh";                               //x is a string
+var y= new String("Santosh");                   // y is an object
+
+document.getElementById("demo").innerHTML=
+typeof x + "<br>" + typeof y;
+
+document.getElementById("demo1").innerHTML=(x==y);      // string and object are equal in value i.e John. SO == operator only checks for value in it.
+document.getElementById("demo2").innerHTML=(x===y);     //String and object are equal in value but not in type. So === operator checks for value and type.
+// Object can not be compared using == and === operator.
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h2> JavaScript Arrays </h2>
+
+<p> Basics of Arrays :: </p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<!--button onclick="myFunction()">Add New Bike</button--->
+
+<script>
+
+var bikes=["Honda","Hero","Suzuki","TVS","Kawasaki"];               //declaring Array set .prefered method over below
+
+//var bikes=new Array("Honda","Hero","Suzuki","TVS","Kawasaki");        //Declaring array set
+
+var myDetail={Fname:"Santosh", Lname:"Arakeri", Age:29};
+var fruits,text,Flength,i;
+fruits=["Banana","Mango","Apple","Grapes","Orange"];
+text="<ul>";
+fruits[7]="Pineapple";
+Flength=fruits.length;
+
+//document.getElementById("demo").innerHTML=bikes; 
+//document.getElementById("demo1").innerHTML="Second bike is " + bikes[1];
+
+bikes[1]= "Aprilia";                                                  //changing the value of object in array
+
+//function myFunction(){
+//bikes.push("Vespa");                                                //Adding element to array
+//bikes[bikes.length]="Vespa";                                          //Adding Element to Array
+//document.getElementById("demo").innerHTML=bikes;
+//}
+
+//document.getElementById("demo2").innerHTML=typeof bikes[4] ;          //typeof array is object,here it resturns object
+//document.getElementById("demo1").innerHTML= myDetail["Fname"];
+//document.getElementById("demo2").innerHTML= bikes.length;
+
+for(i=0;i<Flength;i++){
+text +="<li>"+fruits[i] +"</li>"+ "<br>" ;
+
+}
+//document.getElementById("demo").innerHTML=text;
+//document.getElementById("demo").innerHTML=Array.isArray(fruits);          // isArray() Method to test for Array. THis returns True
+document.getElementById("demo").innerHTML=bikes instanceof Array;           // instanceof operator to test the Array . REturns the boolean
+
+
+</script>
+</body>
+</html>

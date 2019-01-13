@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<h2> <center> Functions:: LOcal and Global Variables in Javascript </center> </h2>
+<P>  <center>TO TEST VARIABLES </center> </p>
+<p id = "demo" ></p>
+
+<p id = "demo1"></p>
+
+<p id = "demo2"></p>
+
+<p id = "demo3"></p>
+
+<h2 id="Myfunction"> Hello Santosh ! </h2>
+<button onclick = "DisplayChange()"> Change in Text </button>
+
+<script>
+
+var fullname="Santosh Arakeri"                                     //Global declaration of variables
+
+function DisplayChange(){
+
+document.getElementById("Myfunction").innerHTML = fullname;
+//document.getElementById("Myfunction").innerHTML = window.fullname; //Global scope is the window objects 
+
+//var fullname="Santosh Aakeri";                                      //LOcal variable 
+
+}
+
+
+</script>
+
+</body>
+</html>

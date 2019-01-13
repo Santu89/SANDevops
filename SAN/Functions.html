@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<h2> <center> Functions </center> </h2>
+<P>  <center>TO Test the output of Functions </center> </p>
+<p id = "demo" ></p>
+
+<p id = "demo1"></p>
+
+<p id = "demo2"></p>
+
+<p id = "demo3"></p>
+
+<script>
+
+function FartoCelcius(F){
+return 5/9*(F-32);
+}
+
+
+function myfun(x,y){
+return x*y;
+}
+
+function MyCalci(a,b){
+return a*b;
+}
+
+document.getElementById("demo").innerHTML= myfun(80,30); 
+document.getElementById("demo1").innerHTML= FartoCelcius(98);  // Returns Value from the function
+document.getElementById("demo2").innerHTML= FartoCelcius;    // Returns the function Definition
+document.getElementById("demo3").innerHTML= MyCalci(82,34);
+
+
+</script>
+
+</body>
+</html>

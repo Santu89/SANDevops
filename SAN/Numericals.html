@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<h2> Numeric Numbers  and use toString() Method</h2>
+<p> Numeric numbers starting with '0x' are considered as Hexa </p>
+
+<p id="demo"></p>
+
+<script>
+var myNumber= 256;
+
+var x= 350;
+var y=new Number(350);
+var z=new Number(350);
+//document.getElementById("demo").innerHTML="0x88=" +0x88;       // To check 0x condition
+
+
+//document.getElementById("demo").innerHTML="136=" +              
+//0x136.toString(10)+ " -Decimal, " + myNumber.toString(16) + 
+//" -Hexadecimal, "+ myNumber.toString(8)+ " -Octal, " 
+//+ myNumber.toString(2)+ " -Binary.";                             //To check toString() Method to change it to other base value
+
+//document.getElementById("demo").innerHTML=typeof Infinity;
+
+//document.getElementById("demo").innerHTML=-2/0;                    //Anything devided by zero returns the value of infinity
+
+//document.getElementById("demo").innerHTML= NaN + "5";
+
+//document.getElementById("demo").innerHTML= 100/"Apple";            // Returns NaN
+
+//document.getElementById("demo").innerHTML= 100*"Apple";              // Returns NaN
+
+//document.getElementById("demo").innerHTML= typeof NaN;              //Data typeof NaN is Number
+
+//document.getElementById("demo").innerHTML= 100*"10";                 //Returns 1000, as string contains the value
+
+//document.getElementById("demo").innerHTML= typeof x + " <br>  " + typeof y; // Returns x as number and y as an object datatype
+document.getElementById("demo").innerHTML= x==y;                      //Returns true as values are same
+//document.getElementById("demo").innerHTML= x===y;                     //Returns false as datatype are different even values are same  
+
+//document.getElementById("demo").innerHTML= y==z;                       //Objects can not be compared as it always returns false evenif the object values are same
+
+</script>
+</body>
+</html>
